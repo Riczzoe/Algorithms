@@ -1,0 +1,14 @@
+E A S Y Q U E S T I O N
+
+
+            merge(a, 0, 0, 1)
+        merge(a, 0, 1, 2)
+            merge(a, 3, 3, 4)
+        merge(a, 3, 4, 5)
+    merge(a, 0, 2, 5)
+            merge(a, 6, 6, 7)
+        merge(a, 6, 7, 8)
+            merge(a, 9, 9, 10)
+        merge(a, 9, 10, 11)
+    merge(a, 6, 8, 11)
+merge(a, 0, 5, 11)
