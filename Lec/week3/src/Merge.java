@@ -4,8 +4,9 @@ public class Merge extends SortUtil {
     private static Comparable[] aux;
 
     public static void merge(Comparable[] a, int lo, int mid, int hi) {
-        System.out.println("merge(a, " + lo + ", " + mid + ", " + hi + ")");
+        System.out.println("merge(" + lo + ", " + mid + ", " + hi + ")");
         int i = lo, j = mid + 1;
+        // System.out.println(hi - lo + 1);
 
         for (int k = lo; k <= hi; k++) {
             aux[k] = a[k];
@@ -51,7 +52,9 @@ public class Merge extends SortUtil {
 
     public static void main(String[] args) {
         Character[] a = new Character[] {
-                'M', 'E', 'R', 'G', 'E', 'S', 'O', 'R', 'T', 'E', 'X', 'A', 'M', 'P', 'L', 'E'
+                'M', 'E', 'R', 'G', 'E', 'S', 'O', 'R', 'T', 'E', 'X', 'A', 'M', 'P', 'L', 'E',
+                'M', 'E', 'R', 'G', 'E', 'S', 'O', 'R', 'T', 'E', 'X', 'A', 'M', 'P', 'L', 'E',
+                'M', 'E', 'R', 'G', 'E', 'S', 'O'
         };
         System.out.println("Before Sort:");
         show(a);
